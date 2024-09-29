@@ -5,72 +5,76 @@ import project4 from "../assets/project-4.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Dedicate myself in building responsive, user-friendly websites and applications. (Laravel & React JS)
+
+With a focus on front-end and back-end development, I am always interested in exploring new technologies to create efficient, scalable solutions and passionate about turning ideas into functional, high-performing website. My goal is to deliver seamless user experiences through well-crafted code and innovative design.
+
+In addition to technical expertise, I've honed strong communication and leadership skills through various experiences. As an easy-going individual, I value collaboration and teamwork, which allows me to connect with others and guide projects smoothly. Committed to continuous improvement, I strive to drive successful outcomes in every project undertaken.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
+    year: "January 2024 - Present",
     role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    company: "Mr. & Ms. UMN 2024",
+    description: `Led a team in developing and maintaining web applications using Laravel. It operates using MySQL database and can handle registration for committee registration, candidate, and can handle ticket purchases.`,
+    technologies: ["Laravel", "TailwindCSS", "Javascript", "MySQL"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "November 2023 - December 2023",
+    role: "Full Stack Developer",
+    company: "Rhapsodie Music Space",
+    description: `Collaborating on making full stack website (Laravel Framework) for a business owner where people can book a private room or music space to learn about music.`,
+    technologies: ["Laravel", "CSS", "MySQL", "Figma", "Javascript"],
+  },
+  {
+    year: "September 2023 - September 2023",
+    role: "Full Stack Developer",
+    company: "To Do List Project",
+    description: `A to do list project that can record tasks that are about to be done, on progress, or done. All statuses will be entered into the database and if a task is completed, it will be moved to the "Completed Tasks" table.`,
+    technologies: ["PHP", "Javascript", "CSS", "MySQL"],
+  },
+  {
+    year: "September 2024",
+    role: "Front End Developer",
+    company: "Website Portfolio Personal Project",
+    description: `Developing a personal website portfolio`,
+    technologies: ["React JS", "TailwindCSS"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Campus Committee Website",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+      "A fully functional website with features like registration, buying tickets, and informations of the event",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
   },
   {
-    title: "Task Management App",
+    title: "Website for a Business Owner",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      "A full stack website for a business owner where people can book a private room or music space to learn about music.",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
   {
-    title: "Portfolio Website",
+    title: "Task Management App",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+      "A to do list project that can record tasks that are about to be done, on progress, or done.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
-    title: "Blogging Platform",
+    title: "Website Portfolio",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["HTML"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Tangerang, Banten, Indonesia ",
+  phoneNo: "+62 896 0113 6789",
+  email: "friliyandre72004@gmail.com",
 };

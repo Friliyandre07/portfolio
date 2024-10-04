@@ -1,7 +1,7 @@
 import React from "react";
 
 const StarsBackground = () => {
-  const stars = Array.from({ length: 150 }); // Increase the number of stars to 150 or more for a denser background
+  const stars = Array.from({ length: 150 });
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">

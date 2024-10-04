@@ -1,31 +1,55 @@
-import {EXPERIENCES} from "../constants/data"
-const Experience = () => {
-    return (
-        <div className="border-b border-neutral-800 pb-4">
-            <h1 className="my-20 text-center text-4xl">Experience</h1>
-            <div>
-                {EXPERIENCES.map((experience, index) => (
-                    <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                        <div className="w-full lg:w-1/4">
-                            <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
-                        </div>
-                        <div className="w-full max-w-xl lg:w-3/4">
-                            <h6 className="mb-2 font-semibold">
-                                {experience.role} - <span className="text-sm text-purple-100">
-                                    {experience.company}
-                                </span>
-                            </h6>
-                            <p className="mb-2 text-neutral-400">{experience.description}</p>
-                            {experience.technologies.map((tech, index) => (
-                                <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1
-                                text-sm font-medium text-purple-500">{tech}</span>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
-}
+import { EXPERIENCES } from "../constants/data";
+import ExperienceItem from "./ExperienceItem";
+import { motion } from "framer-motion";
 
-export default Experience
+const Experience = ({ startAnimation }) => {
+  const letters = "Experience".split("");
+  return (
+    <div className="border-b border-neutral-800 pb-4 relative">
+      <motion.div
+        className="absolute w-40 h-8 sm:w-80 sm:h-12 bg-yellow-700 left-[420px] z-10 rounded-tl-lg rounded-br-3xl min-[320px]:left-28 lg:left-[420px]"
+        initial={{ opacity: 0, scaleX: 0 }}
+        animate={startAnimation ? { opacity: 1, scaleX: 1 } : {}}
+        transition={{ duration: 1.2, delay: 0.4, ease: "easeInOut" }}
+      ></motion.div>
+      <motion.div
+        className="absolute w-40 h-8 sm:w-80 sm:h-12 bg-red-950 left-[490px] top-3 sm:top-4 z-0 rounded-tr-3xl rounded-bl-lg rounded-br-lg min-[320px]:left-40 lg:left-[490px]"
+        initial={{ opacity: 0, scaleX: 0 }}
+        animate={startAnimation ? { opacity: 1, scaleX: 1 } : {}}
+        transition={{ duration: 1.5, delay: 0.7, ease: "easeInOut" }}
+      ></motion.div>
+
+      <div className="my-16 sm:my-20 text-center relative z-20">
+        <div className="flex justify-center space-x-1">
+          {letters.map((letter, index) => (
+            <motion.span
+              key={index}
+              className="text-2xl sm:text-4xl font-bold"
+              initial={{ opacity: 0, y: 20, scale: 0.8 }}
+              animate={startAnimation ? { opacity: 1, y: 0, scale: 1 } : {}}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                ease: "easeOut",
+              }}
+              style={{
+                display: "inline-block",
+                transformOrigin: "center",
+              }}
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        {EXPERIENCES.map((experience, index) => (
+          <ExperienceItem key={index} experience={experience} index={index} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Experience;

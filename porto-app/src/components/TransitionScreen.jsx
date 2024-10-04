@@ -24,7 +24,6 @@ const TransitionScreen = ({ onTransitionEnd }) => {
     <>
       {isVisible && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
-          {/* Staircase Animation */}
           <div style={styles.staircaseAnimation}>
             <div style={{ ...styles.step, ...styles.step1 }}></div>
             <div style={{ ...styles.step, ...styles.step2 }}></div>
@@ -33,7 +32,6 @@ const TransitionScreen = ({ onTransitionEnd }) => {
             <div style={{ ...styles.step, ...styles.step5 }}></div>
           </div>
 
-          {/* "Hi :D" text fades in after staircase animation */}
           {showHi && (
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold animate-fade">
               Hi :D
@@ -55,7 +53,6 @@ const TransitionScreen = ({ onTransitionEnd }) => {
   );
 };
 
-// Inline styles for the staircase animation and "Hi :D" text
 const styles = {
   staircaseAnimation: {
     position: "relative",
@@ -66,8 +63,8 @@ const styles = {
     position: "absolute",
     backgroundColor: "black",
     width: "100%",
-    height: "20%", // Adjust step height as necessary
-    left: "100%", // Starts off-screen
+    height: "20%",
+    left: "100%",
     animation: "moveIn 0.6s forwards",
   },
   step1: {

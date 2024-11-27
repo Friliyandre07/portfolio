@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants/data";
 import profPict from "../assets/profPict.jpg";
 import { motion } from "framer-motion";
-import cvFile from "../assets/CV Frili.pdf";
+import cvFile from "../assets/CV_Friliyandre Yap.pdf";
 import Marquee from "./Marquee";
 
 const Hero = () => {
@@ -30,7 +30,7 @@ const Hero = () => {
 
                         <a
                             href={cvFile}
-                            download="Friliyandre_CV.pdf"
+                            download="CV_Friliyandre.pdf"
                             className="relative inline-block mt-4 sm:mt-8 px-6 sm:px-8 py-3 sm:py-4 bg-gray-950 text-white font-bold rounded-lg hover:bg-gradient-to-r hover:from-yellow-600 hover:to-red-600 transition duration-300"
                         >
                             <span className="absolute inset-0 rounded-lg border-2 border-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-purple-500 animate-spin-border"></span>
